@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* untuk header */
+.header {
+  padding: 30px;
+  background: rgb(50, 47, 47);
+}
+
+.header h3 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  line-height: 0;
+}
+
+.header h4 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 0;
+}
+
+/* ukuran layout */
+body {
+  font-family: Arial;
+  padding: 50px;
+  background: #f1f1f1;
+}
+
+/*untuk navigasi bar*/
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style navigasi bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2; /* untuk warna font */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ffc0c0; /* untuk merubah warna pada saat link di sentuh/di klik */
+  color: black; /* warna pada hover */
+}
+
+
+/* untuk mengatur vidio agar ditengah */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.video-container iframe {
+    width: 50%; /* Sesuaikan lebar video sesuai kebutuhan Anda */
+    height: 50vh;
+    }
+
+/* untuk memberikan efek seperti kartu/artikel */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #000000;
+  margin-top: 20px;
+}
+
+.footer h3 {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  line-height: 0;
+}
+
+/* CSS untuk menempatkan gambar di tengah */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;  Ini akan membuat gambar berada di tengah vertikal di halaman */
+}
+
+.justify-text {
+          text-align: justify;
+}
+.indent{
+    text-indent: 20px;
+}
+</style>
+
+
+</head>
+<body>
+<div class="header">
+        <img src="https://www.itera.ac.id/wp-content/uploads/2019/02/logo_itera_bulet_head.png" width="150" height="150" align="left">
+    <br><br>
+    <h3 class="indent"> Fauzan Alfa A.</h3>
+    <h4 class="indent"> ini ga tau mau disi apa, soalnya emang ga ada keahlian.</h4>
+    <br>
+</div>
+
+<div class="topnav">
+  <a href="https://github.com/FzanAlfa" style="float:right">Github</a>
+  <a href="http://if.itera.ac.id/" style="float:right">Pordi</a>
+  <a href="https://itera.ac.id/" style="float:right">Kampus</a>
+</div>
+
+<div class="row">
+    <div class="card"> 
+    <h3>  TENTANG SAYA</h3>
+    <p class="justify-text">      Nama saya adalah Fauzan Alfa Abhista, seorang mahasiswa teknik informatika di Institut teknologi sumatera.
+      Saya baru saja memulai studi saya di bidang ini dan saya merasa sangat tertarik dan penasaran dengan berbagai topik yang tersedia.
+      Saya ingin belajar lebih banyak tentang siber security, seperti hacking, mencegah tindakan hacking dsb. karena saya merasa bidang
+      tersebut sangat relevan dan bermanfaat untuk masa depan saya tentunya. Saya belum memiliki banyak pengalaman atau keterampilan
+      dalam bidang tersebut, tetapi saya bersedia untuk belajar dari teman-teman sekelas saya, dosen, dan sumber-sumber lainnya.
+      Saya juga ingin berpartisipasi dalam berbagai kegiatan ekstrakurikuler yang tentunya berhubungan dengan bidang yang saya 
+      minati dan dapat membantu saya mengembangkan keterampilan sosial dan profesional saya. Saya berharap dapat menjadi seorang
+      mahasiswa teknik informatika yang kompeten dan berkontribusi dalam bidang tersebut.</p>
+
+    <div class="video-container"><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/8OxTG8plkz4?si=bX47GRnfIJ4Ytb3w" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>vidio tenntang itera</iframe></div>
+        <h3 class="center"> Intro itera </h3>
+    </div>
+    <div class="card">
+        <h2>PENGALAMAN IDUP</h2>
+        <table height="200px" border="1">
+          <tr bgcolor="#A5A5A5">
+              <th rowspan="2">NO</th>
+              <th rowspan="2">JENIS PENGALAMAN</th>
+              <th colspan="2">TANGGAL</th> 
+          </tr>
+          <tr bgcolor="#A5A5A5">
+            <th>Mulai</th>
+            <th>Selesai</th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>freelancer grafis design</td>
+              <td>08 AGUSTUS 2019</td>
+              <td>10 NOVEMBER 2022</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Game</td>
+              <td>Dari kecil</td>
+              <td>Kalo dapet kerjaan</td>
+          </tr>
+      </table>
+    </div>
+
+    <div class="card">
+    <h2> Masukan email dan password</h2>
+    <form> <!-- untuk mengelompokan elemen masukan --> 
+      <label for="email"> Email :</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="password">Password  :</label>
+      <input type="password" id="password" name="password" required>
+      <br><br>
+
+      <h4>apakah kuliah di itera menyenangkan?</h4>
+      <label for="option1">
+        <input type="radio" name="pertanyaan1" value="menyenangkan bangettt" required> menyenangkan bangettt </label>
+    <br>
+      <label for="option2">
+        <input type="radio" name="pertanyaan1" value="B aja" required> B aja </label>
+    <br>
+      <label for="option3">
+        <input type="radio" name="pertanyaan1" value="itera panassss" required> itera panassss </label> <br>
+      <br><br>
+      
+      <h4>INFORMATIKA?</h4>
+      <label for="option1">
+        <input type="radio" name="pertanyaan2" value="jaya jaya jaya" required> jaya jaya jaya </label>
+    <br>
+      <label for="option2">
+        <input type="radio" name="pertanyaan2" value="bodo amat dah" required> bodo amat dah </label>
+    <br>
+      <label for="option3">
+        <input type="radio" name="pertanyaan2" value="Y" required> Y </label> <br>
+
+
+      
+      
+      <br><br>
+    <input type="reset" value="Hapus jawaban"> <!-- Tombol Clear -->
+    <input type="submit" value="Submit">
+  </form>
+    </div>
+</div>
+
+<div class="footer">
+  <h3>Footer Hero</h3>
+</div>
+
+</body>
+</html>
