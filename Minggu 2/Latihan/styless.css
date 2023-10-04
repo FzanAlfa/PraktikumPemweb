@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+  color: white;
+  background: rgb(0, 0, 0);
+  font-size:medium;
+  text-decoration: none;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav a {
+  color: #f2f2f2; /* untuk warna font */
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  background-color: #ffc0c0; /* untuk merubah warna pada saat link di sentuh/di klik */
+  color: rgb(30, 0, 255); /* warna pada hover */
+}
+
+.nav_link{
+  list-style: none;
+  float: right;
+}
+
+.nav_link li{
+  display: inline-block;
+}
+
+.nav_link li a{
+  padding: 10px 14px;
+}
+
+button{
+  background-color: rgb(255, 38, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: #440000;
+}
